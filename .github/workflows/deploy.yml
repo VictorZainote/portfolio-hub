@@ -1,0 +1,16 @@
+name: Deploy PortfolioHUB
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Simulando Integração com PortfolioHUB
+        run: |
+          echo "Conectando ao PortfolioHUB API..."
+          echo "Sincronizando repositório VictorZainote/portfolio-hub..."
+          echo "Deploy realizado com sucesso!"
